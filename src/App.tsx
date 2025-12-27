@@ -9,7 +9,7 @@ import { supabase } from './lib/supabase';
 
 function App() {
   const [destination, setDestination] = useState(() => {
-    return localStorage.getItem('tripDestination') || 'Paris';
+    return localStorage.getItem('tripDestination') || '';
   });
   const [targetDate, setTargetDate] = useState(() => {
     return localStorage.getItem('tripDate') || new Date(new Date().getFullYear() + 1, 0, 1).toISOString();
